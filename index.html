@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo">🍴 Restoran</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="Services.html">Service</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li class="dropdown">
+        <select onchange="window.location.href=this.value;">
+          <option selected disabled>Pages</option>
+          <option value="team.html">Our Team</option>
+          <option value="booking.html">Booking</option>
+        </select>
+      </li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="booking.html" class="btn">Book a Table</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <section class="hero">
+        <!-- Background image is handled in CSS -->
+    
+        <div class="hero-text">
+          <h1>Enjoy Our <br> Delicious Meal</h1>
+          <p>
+            Welcome to Restoran, where taste meets tradition.  <br>
+            We serve freshly prepared dishes made with love and local ingredients.  
+            Whether it’s lunch with friends or dinner with family, we’ve got you covered.  
+            Come experience a delightful journey of flavors and warmth.
+          </p>
+          <a href="booking.html" class="btn">Book a Table</a>
+        </div>
+    
+        <!-- Rotating food image -->
+        <div class="hero-image">
+          <img src="https://themewagon.github.io/restoran/img/hero.png" alt="Grilled Food"/>
+        </div>
+      </section>
+    
+      <script src="script.js"></script>
+
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="service-box">
+            <div class="icon">👨‍🍳</div>
+            <h3>Master Chefs</h3>
+            <p>Our expert chefs craft delicious meals with passion and precision, ensuring every dish is a masterpiece.</p>
+          </div>
+          <div class="service-box">
+            <div class="icon">🍴</div>
+            <h3>Quality Food</h3>
+            <p>We use the finest ingredients to deliver food that’s fresh, flavorful, and prepared with care.</p>
+          </div>
+          <div class="service-box">
+            <div class="icon">🛒</div>
+            <h3>Online Order</h3>
+            <p>Enjoy the convenience of ordering your favorite dishes online, delivered right to your doorstep.</p>
+          </div>
+          <div class="service-box">
+            <div class="icon">🎧</div>
+            <h3>24/7 Service</h3>
+            <p>Satisfy your cravings anytime with our round-the-clock service, available whenever you need us.</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="about" id="about">
+        <div class="about-container">
+          <div class="about-images">
+            <img src="restaurant3.webp" class="about-img1" alt="Restaurant">
+            <img src="restaurant4.webp" class="about-img2" alt="Restaurant">
+            <img src="restaurant2.jpg" class="about-img3" alt="Restaurant">
+            <img src="restaurant1.jpg" class="about-img4" alt="Restaurant">
+          </div>
+          <div class="about-content">
+            <h5>About Us</h5>
+            <h2>Welcome to <span>🍴</span>Restoran</h2>
+            <p>Welcome to Restoran, where culinary excellence meets unforgettable experiences. Our passionate team of chefs prepares every dish with the finest ingredients, ensuring a delightful and authentic dining experience. Whether you're here to enjoy a meal with family, celebrate special occasions, or order from the comfort of your home, we promise to deliver exceptional quality, service, and flavor.</p>
+            <p>At Restoran, we’re not just serving food—we’re creating memories.</p>
+      
+            <div class="about-stats">
+              <div>
+                <h3><span id="experience">0</span></h3>
+                <p>Years of <strong>Experience</strong></p>
+              </div>
+              <div>
+                <h3><span id="chefs">0</span></h3>
+                <p>Popular <strong>Master Chefs</strong></p>
+              </div>
+            </div>
+      
+            <a href="AboutUs.html" class="read-more-btn">READ MORE</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="menu" class="menu-section">
+        <h2 class="section-title">🍽️ Food Menu</h2>
+        <h1 class="section-heading">Most Popular Items</h1>
+      
+        <!-- Menu Filter Buttons -->
+        <!-- Tabs -->
+  <div class="menu-tabs">
+  <button class="tab-btn" onclick="filterMenu('breakfast')">☕ Popular Breakfast</button>
+  <button class="tab-btn" onclick="filterMenu('lunch')">🍔 Special Lunch</button>
+  <button class="tab-btn" onclick="filterMenu('dinner')">🍴 Lovely Dinner</button>
+</div>
+
+<!-- Menu Items -->
+<div class="menu-items">
+  <!-- Breakfast Items -->
+  <div class="menu-item" data-category="breakfast">
+    <img src="breakfast.jpg" alt="Breakfast">
+    <div class="menu-info">
+      <h4>Egg Sandwich</h4>
+      <p>Delicious and healthy breakfast option</p>
+    </div>
+    <div class="menu-price">$50</div>
+  </div>
+
+  <div class="menu-item" data-category="breakfast">
+    <img src="breakfast.jpg" alt="Breakfast">
+    <div class="menu-info">
+      <h4>Egg Sandwich</h4>
+      <p>Delicious and healthy breakfast option</p>
+    </div>
+    <div class="menu-price">$50</div>
+  </div>
+
+  <div class="menu-item" data-category="breakfast">
+    <img src="breakfast.jpg" alt="Breakfast">
+    <div class="menu-info">
+      <h4>Egg Sandwich</h4>
+      <p>Delicious and healthy breakfast option</p>
+    </div>
+    <div class="menu-price">$50</div>
+  </div>
+
+  <div class="menu-item" data-category="breakfast">
+    <img src="breakfast.jpg" alt="Breakfast">
+    <div class="menu-info">
+      <h4>Egg Sandwich</h4>
+      <p>Delicious and healthy breakfast option</p>
+    </div>
+    <div class="menu-price">$50</div>
+  </div>
+
+  <div class="menu-item" data-category="breakfast">
+    <img src="breakfast.jpg" alt="Breakfast">
+    <div class="menu-info">
+      <h4>Egg Sandwich</h4>
+      <p>Delicious and healthy breakfast option</p>
+    </div>
+    <div class="menu-price">$50</div>
+  </div>
+
+  <div class="menu-item" data-category="breakfast">
+    <img src="breakfast.jpg" alt="Breakfast">
+    <div class="menu-info">
+      <h4>Egg Sandwich</h4>
+      <p>Delicious and healthy breakfast option</p>
+    </div>
+    <div class="menu-price">$50</div>
+  </div>
+
+  <div class="menu-item" data-category="breakfast">
+    <img src="breakfast.jpg" alt="Breakfast">
+    <div class="menu-info">
+      <h4>Egg Sandwich</h4>
+      <p>Delicious and healthy breakfast option</p>
+    </div>
+    <div class="menu-price">$50</div>
+  </div>
+
+  <div class="menu-item" data-category="breakfast">
+    <img src="breakfast.jpg" alt="Breakfast">
+    <div class="menu-info">
+      <h4>Egg Sandwich</h4>
+      <p>Delicious and healthy breakfast option</p>
+    </div>
+    <div class="menu-price">$50</div>
+  </div>
+
+  <!-- Lunch Items -->
+  <div class="menu-item" data-category="lunch">
+    <img src="lunch.jpg" alt="Lunch">
+    <div class="menu-info">
+      <h4>Grilled Chicken</h4>
+      <p>Tender grilled chicken served hot</p>
+    </div>
+    <div class="menu-price">$120</div>
+  </div>
+
+  <div class="menu-item" data-category="lunch">
+    <img src="lunch.jpg" alt="Lunch">
+    <div class="menu-info">
+      <h4>Grilled Chicken</h4>
+      <p>Tender grilled chicken served hot</p>
+    </div>
+    <div class="menu-price">$120</div>
+  </div>
+
+  <div class="menu-item" data-category="lunch">
+    <img src="lunch.jpg" alt="Lunch">
+    <div class="menu-info">
+      <h4>Grilled Chicken</h4>
+      <p>Tender grilled chicken served hot</p>
+    </div>
+    <div class="menu-price">$120</div>
+  </div>
+
+  <div class="menu-item" data-category="lunch">
+    <img src="lunch.jpg" alt="Lunch">
+    <div class="menu-info">
+      <h4>Grilled Chicken</h4>
+      <p>Tender grilled chicken served hot</p>
+    </div>
+    <div class="menu-price">$120</div>
+  </div>
+
+  <div class="menu-item" data-category="lunch">
+    <img src="lunch.jpg" alt="Lunch">
+    <div class="menu-info">
+      <h4>Grilled Chicken</h4>
+      <p>Tender grilled chicken served hot</p>
+    </div>
+    <div class="menu-price">$120</div>
+  </div>
+
+  <div class="menu-item" data-category="lunch">
+    <img src="lunch.jpg" alt="Lunch">
+    <div class="menu-info">
+      <h4>Grilled Chicken</h4>
+      <p>Tender grilled chicken served hot</p>
+    </div>
+    <div class="menu-price">$120</div>
+  </div>
+
+  <div class="menu-item" data-category="lunch">
+    <img src="lunch.jpg" alt="Lunch">
+    <div class="menu-info">
+      <h4>Grilled Chicken</h4>
+      <p>Tender grilled chicken served hot</p>
+    </div>
+    <div class="menu-price">$120</div>
+  </div>
+
+  <div class="menu-item" data-category="lunch">
+    <img src="lunch.jpg" alt="Lunch">
+    <div class="menu-info">
+      <h4>Grilled Chicken</h4>
+      <p>Tender grilled chicken served hot</p>
+    </div>
+    <div class="menu-price">$120</div>
+  </div>
+
+  <!-- Dinner Items -->
+  <div class="menu-item" data-category="dinner">
+    <img src="dinner.jpg" alt="Dinner">
+    <div class="menu-info">
+      <h4>Pasta Alfredo</h4>
+      <p>Classic creamy dinner pasta</p>
+    </div>
+    <div class="menu-price">$100</div>
+  </div>
+
+  <div class="menu-item" data-category="dinner">
+    <img src="dinner.jpg" alt="Dinner">
+    <div class="menu-info">
+      <h4>Pasta Alfredo</h4>
+      <p>Classic creamy dinner pasta</p>
+    </div>
+    <div class="menu-price">$100</div>
+  </div>
+
+  <div class="menu-item" data-category="dinner">
+    <img src="dinner.jpg" alt="Dinner">
+    <div class="menu-info">
+      <h4>Pasta Alfredo</h4>
+      <p>Classic creamy dinner pasta</p>
+    </div>
+    <div class="menu-price">$100</div>
+  </div>
+
+  <div class="menu-item" data-category="dinner">
+    <img src="dinner.jpg" alt="Dinner">
+    <div class="menu-info">
+      <h4>Pasta Alfredo</h4>
+      <p>Classic creamy dinner pasta</p>
+    </div>
+    <div class="menu-price">$100</div>
+  </div>
+
+  <div class="menu-item" data-category="dinner">
+    <img src="dinner.jpg" alt="Dinner">
+    <div class="menu-info">
+      <h4>Pasta Alfredo</h4>
+      <p>Classic creamy dinner pasta</p>
+    </div>
+    <div class="menu-price">$100</div>
+  </div>
+
+  <div class="menu-item" data-category="dinner">
+    <img src="dinner.jpg" alt="Dinner">
+    <div class="menu-info">
+      <h4>Pasta Alfredo</h4>
+      <p>Classic creamy dinner pasta</p>
+    </div>
+    <div class="menu-price">$100</div>
+  </div>
+
+  <div class="menu-item" data-category="dinner">
+    <img src="dinner.jpg" alt="Dinner">
+    <div class="menu-info">
+      <h4>Pasta Alfredo</h4>
+      <p>Classic creamy dinner pasta</p>
+    </div>
+    <div class="menu-price">$100</div>
+  </div>
+
+  <div class="menu-item" data-category="dinner">
+    <img src="dinner.jpg" alt="Dinner">
+    <div class="menu-info">
+      <h4>Pasta Alfredo</h4>
+      <p>Classic creamy dinner pasta</p>
+    </div>
+    <div class="menu-price">$100</div>
+  </div>
+
+  <!-- Add more items with correct data-category -->
+</div>
+</section>
+
+
+
+<!-- Book a Table Section -->
+<section class="book-table-section">
+  <div class="containers">
+    
+    <!-- Left: Video -->
+    <div class="video-box">
+      <video autoplay muted loop width="100%" controls>
+        <source src="restaurant.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Right: Booking Form -->
+    <div class="form-box">
+      <h2>Book Your Table Online</h2>
+      <form action="" method="post" enctype="multipart/form-data">
+
+        <input type="text" placeholder="Your Name" name="name" required>
+
+        <input type="email" placeholder="Your Email" name="email" required>
+
+        <input type="datetime-local" placeholder="Enter Date & Time" name="datetime" required>
+
+        <select name="people" required>
+          <option value="" disabled selected>No. Of People</option>
+          <option value="1">People 1</option>
+          <option value="2">People 2</option>
+          <option value="3">People 3</option>
+          <option value="4">More than 3</option>
+        </select>
+
+        <textarea placeholder="Special Request" name="request"></textarea>
+
+        <input type="submit" id="submitbtn" name="submit" value="BOOK NOW"/>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<?php
+if(isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $datetime = $_POST['datetime'];
+        $people=$_POST['people'];
+        $request=$_POST['request'];
+
+        $con = mysqli_connect("localhost", "root", "", "table_booking");
+        $qry = "insert into tablebooking (c_name, c_email, c_datetime, no_of_people, c_request) values('$name','$email','$datetime','$people','$request')";
+        $b = mysqli_query($con, $qry);
+
+        if($b){
+          echo "<script>alert('Your table has been booked!!');</script>";
+        }
+}
+?>
+
+
+<!-- Team Members Section -->
+<section class="team-section">
+  <h3 class="subtitle">Team Members</h3>
+  <h2 class="title">Our Master Chefs</h2>
+
+  <div class="team-container">
+    
+    <!-- Chef Card -->
+    <div class="team-card">
+      <div class="img-box">
+        <img src="chef1.jpg" alt="Chef 1">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <h4>Chef Arjun Patel </h4>
+      <p>Head Master Chef</p>
+    </div>
+
+    <!-- Repeat for other chefs -->
+    <div class="team-card">
+      <div class="img-box">
+        <img src="chef2.jpg" alt="Chef 2">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <h4>Chef Rajesh Kumar</h4>
+      <p>Sous Chef</p>
+    </div>
+
+    <div class="team-card">
+      <div class="img-box">
+        <img src="chef3.jpg" alt="Chef 3">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <h4>Chef Vikas Sharma</h4>
+      <p>Grill Specialist</p>
+    </div>
+
+    <div class="team-card">
+      <div class="img-box">
+        <img src="chef4.jpg" alt="Chef 4">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <h4>Chef Sanjay Mehta</h4>
+      <p>Seafood Specialist</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="booking.html
+        ">Reservation</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+      <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
+      <p><i class="fas fa-envelope"></i> info@restoran.com</p>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Opening</h3>
+      <p>Monday - Saturday<br>09AM - 09PM</p>
+      <p>Sunday<br>10AM - 08PM</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Stay updated with our latest offers, new dishes, and exciting events—subscribe to our newsletter today!</p>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <input type="submit" value="SIGNUP"/>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Your Site Name, All Right Reserved. Designed By <a href="#">HTML & CSS</a></p>
+    <p>Distributed By <a href="#">YourSite</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

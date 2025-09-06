@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing</title>
+    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+     <header id="navbar">
+        <div class="logo">🍴 Restoran</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="Services.html">Service</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li class="dropdown">
+        <select onchange="window.location.href=this.value;">
+          <option selected disabled>Pages</option>
+          <option value="team.html">Our Team</option>
+          <option value="booking.html">Booking</option>
+          
+        </select>
+      </li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="booking.html" class="btn">Book a Table</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p><span>HOME</span> / <span>PAGES</span> / <strong>CONTACT</strong></p>
+      </section>
+
+      <script src="script.js"></script>
+
+
+    <section class="contact-section">
+    <h2>Contact Us</h2>
+    <h1>Contact For Any Query</h1>
+
+    <div class="contact-types">
+      <div class="contact-box">
+        <h3>Booking</h3>
+        <p>📧 book@restoran.com</p>
+      </div>
+      <div class="contact-box">
+        <h3>General</h3>
+        <p>📧 info@restoran.com</p>
+      </div>
+      <div class="contact-box">
+        <h3>Technical</h3>
+        <p>📧 tech@restoran.com</p>
+      </div>
+    </div>
+
+    <div class="map-form">
+      <iframe src="https://www.google.com/maps?q=New+York,+USA&output=embed" allowfullscreen loading="lazy"></iframe>
+
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <input type="submit" value="SEND MESSAGE" />
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="booking.html">Reservation</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+      <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
+      <p><i class="fas fa-envelope"></i> info@restoran.com</p>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Opening</h3>
+      <p>Monday - Saturday<br>09AM - 09PM</p>
+      <p>Sunday<br>10AM - 08PM</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Stay updated with our latest offers, new dishes, and exciting events—subscribe to our newsletter today!</p>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <input type="submit" value="SIGNUP"/>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Your Site Name, All Right Reserved. Designed By <a href="#">HTML & CSS</a></p>
+    <p>Distributed By <a href="#">YourSite</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
